@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 int a = Integer.parseInt(mFirst.getText().toString());
                 int b = Integer.parseInt(mSecond.getText().toString());
                 try {
-                    mResultText.setText("Result -> Add ->"+ iRemote.add(a,b));
+                    mResultText.setText("Result: "+ iRemote.add(a,b));
                     Log.d("IRemote", "Binding - Add operation");
                 } catch (RemoteException e) {
                     // TODO Auto-generated catch block
