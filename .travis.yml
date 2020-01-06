@@ -2,7 +2,6 @@ language: android
 dist: trusty
 sudo: required
 jdk: oraclejdk8
-install: demo-debug.apk
 android:
   components:
     - tools
@@ -26,6 +25,7 @@ before_install:
   - "chmod +x gradlew"
   - yes | sdkmanager "platforms;android-28"
   - wget https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true
+  - sudo apt-get install demo-debug.apk
   #- sudo dpkg -i demo-debug.apk
 
 # Emulator Management: Create, Start and Wait
