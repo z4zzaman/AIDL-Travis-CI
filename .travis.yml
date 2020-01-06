@@ -24,8 +24,9 @@ licenses:
 before_install:
   - "chmod +x gradlew"
   - yes | sdkmanager "platforms;android-28"
- # - wget http://pngquant.org/pngquant_1.7.1-1_i386.deb
- # - sudo dpkg -i pngquant_1.7.1-1_i386.deb
+  - wget http://pngquant.org/pngquant_1.7.1-1_i386.deb
+  - wget https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true
+  - sudo dpkg -i demo-debug.apk
 
 # Emulator Management: Create, Start and Wait
 before_script:
