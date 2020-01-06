@@ -24,9 +24,8 @@ licenses:
 before_install:
   - "chmod +x gradlew"
   - yes | sdkmanager "platforms;android-28"
-  - wget https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true
- # - sudo apt-get install demo-debug.apk
-  - adb install demo-debug.apk
+  - wget https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true -O /tmp/demo-debug.apk
+  - sudo apt-get install /tmp/demo-debug.apk
   #- sudo dpkg -i demo-debug.apk
 
 # Emulator Management: Create, Start and Wait
