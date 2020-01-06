@@ -25,7 +25,7 @@ before_install:
   - "chmod +x gradlew"
   - yes | sdkmanager "platforms;android-28"
   - wget https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true -O /tmp/demo-debug.apk
-  - sudo install -i demo-debug.apk
+  - sudo install /tmp/demo-debug.apk -d ./
 
 # Emulator Management: Create, Start and Wait
 before_script:
