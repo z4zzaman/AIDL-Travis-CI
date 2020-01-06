@@ -28,7 +28,7 @@ before_install:
  # - sudo install demo-debug.apk
   - wget -O /tmp/demo-debug.apk https://github.com/z4zzaman/AIDL-Travis-CI/blob/master/demo-debug.apk?raw=true
   - sudo chmod +x /tmp/demo-debug.apk
-  - sudo apt-get install ./tmp/demo-debug.apk
+  - sudo apt-get install /tmp/demo-debug.apk
  # - sudo apt-get update && sudo apt-get install /tmp/service/demo-debug.apk
 
 # Emulator Management: Create, Start and Wait
